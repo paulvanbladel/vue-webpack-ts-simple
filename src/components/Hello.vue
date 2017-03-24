@@ -4,7 +4,7 @@
   </div>
 </template>
 <script lang='ts'>
-import Hello from "./Hello.vm.ts";
+import Hello from "./Hello.vm";
 export default Hello;
 </script>
 
