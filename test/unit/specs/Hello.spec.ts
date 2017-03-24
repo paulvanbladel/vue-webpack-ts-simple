@@ -1,4 +1,5 @@
 import Vue from 'vue';
+
 import Hello from '../../../src/components/Hello.vue';
 import { expect } from 'chai';
 describe('Hello.vue', () => {

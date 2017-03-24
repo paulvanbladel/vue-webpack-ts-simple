@@ -7,7 +7,7 @@ import Component from 'vue-class-component';
 })
 export default class Hello extends Vue {
   msg: string = 'Welcome to Your Vue.js App';
-  mymethod(): string{
+  mymethod(): string {
     console.log('here we are');
     return 'ok';
   }

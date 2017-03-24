@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Bonjour from '../../../src/components/Bonjour.vue';
 import { expect } from 'chai';
 describe('Bonjour.vue', () => {
-  it.only('should render correct contents', () => {
+  it('should render correct contents', () => {
     const Constructor = Vue.extend(Bonjour);
     const vm = new Constructor().$mount();
     expect(vm.$el.querySelector('.hello h1').textContent)
