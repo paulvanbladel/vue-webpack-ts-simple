@@ -14,9 +14,9 @@ module.exports = function (config) {
     browsers: ['PhantomJS'],
     frameworks: ['mocha', 'sinon-chai'],
     reporters: ['spec', 'coverage'],
-    files: ['./index.js'],
+    files: ['./index.ts'],
     preprocessors: {
-      './index.js': ['webpack', 'sourcemap']
+      './index.ts': ['webpack', 'sourcemap']
     },
     webpack: webpackConfig,
     webpackMiddleware: {
