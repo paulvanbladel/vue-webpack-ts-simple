@@ -7,10 +7,6 @@ describe('Bonjour.vue', () => {
     const vm = new Constructor().$mount();
     expect(vm.$el.querySelector('.hello h1').textContent)
       .to.equal('I am a real dump component without any logic just some data');
-      /*console.log('here we go', vm);
-    let resultFromMyMethod = (<any>vm.$children[0]).mymethod();
-    expect(resultFromMyMethod).to.equal('ok');
-    */
   });
 });
 
