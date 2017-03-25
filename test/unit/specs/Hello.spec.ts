@@ -5,7 +5,7 @@ import { expect } from 'chai';
 describe('Hello.vue', () => {
   it('should render correct contents', () => {
     // surprisingly this test needs to be setup with a template and components param in the vue extend method, WHY??????
-
+    debugger;
     const Constructor = Vue.extend({ template: '<div><hello></hello></div>', components: { 'hello': Hello } });
     const vm = new Constructor().$mount();
     expect(vm.$el.querySelector('.hello h1').textContent)

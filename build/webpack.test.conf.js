@@ -10,10 +10,15 @@ var webpackConfig = merge(baseConfig, {
   module: {
     rules: utils.styleLoaders()
   },
+
   devtool: '#inline-source-map',
   plugins: [
     new webpack.DefinePlugin({
       'process.env': require('../config/test.env')
+    }),
+    new webpack.SourceMapDevToolPlugin({
+      filename: null, // if no value is provided the sourcemap is inlined
+      test: /\.(ts|js)($|\?)/i
     })
   ]
 })
